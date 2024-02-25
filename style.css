@@ -1,0 +1,128 @@
+/* Importing font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(192, 192, 192);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    height: 430px;
+    width: 400px;
+    background-color: azure;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.top{
+    height: 30%;
+    width: 100%;
+    background-color: #0026ba;
+background-image: linear-gradient(19deg, #0026ba 0%, #B721FF 100%);
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    /* posti */
+}
+.top #profile-pic{
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    background-color: white;
+    border: 4px solid rgb(70, 70, 200);
+    border-radius: 50%;
+    /* object-fit: fill; */
+    position: relative;
+    top: 10px
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+#name{
+    font-size: 22px;
+    font-weight: 600;
+}
+#profession{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* icons */
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.icons a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    height: 34px;
+    width: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+.icons i{
+    font-size: 1.3em;
+}
+
+/* buttons */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.buttons button{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(61, 61, 255);
+    color: white;
+    font-weight: 600 ;
+    border: none;
+    border-radius: 20px;
+}
+
+/* analytics */
+
+.analytics{
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: center;
+}
+.analytics span{
+    margin-top: 20px;
+    padding: 0 25px;
+    border-right: 2px solid black;
+}
+.analytics #last{
+    border: none;
+}
